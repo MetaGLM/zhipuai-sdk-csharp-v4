@@ -5,7 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace ZhipuApi.Utils
 {
-    public class AuthenicationUtils
+    public class AuthenticationUtils
     {
         public static string GenerateToken(string apiKey, int expSeconds)
         {

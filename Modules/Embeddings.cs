@@ -33,7 +33,7 @@ namespace ZhipuApi.Modules
             // Console.WriteLine("----1----");
             // Console.WriteLine(json);
             var data = new StringContent(json, Encoding.UTF8, "application/json");
-            var api_key = AuthenicationUtils.GenerateToken(this._apiKey, API_TOKEN_TTL_SECONDS);
+            var api_key = AuthenticationUtils.GenerateToken(this._apiKey, API_TOKEN_TTL_SECONDS);
             
             var request = new HttpRequestMessage
             {
